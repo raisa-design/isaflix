@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logonet {
+  height: 130px;
+  margin-top: 10px;
+  width: 300px;
+  padding-top: 12px;
+  padding-left: 30px;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.727),
+      rgba(20, 20, 20, 0.727)
+    ),
+    url('imagens/netflixfundo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*height: 100vh; */
+}
+
+main {
+  background-color: blue;
+  width: 450px;
+  padding: 10px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.568);
+  height: 550px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0px 0px 28px;
+  font-family: Helvetica, sans-serif;
+  margin-left: 55px;
+  margin-top: 30px;
+}
+
+.tela-centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.caixa1,
+.caixa2 {
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 16px 20px 0;
+  box-shadow: none;
+  background-color: #333;
+  width: 100%;
+}
+
+.label {
+  cursor: default;
+}
+
+/* width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #383737fd;
+  border-radius: 8px;*/
+
+#visualizar {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0;
+}
+
+#olho {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: -10px;
+  color: white;
+}
+
+/*width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:#383737fd;
+  border-radius: 8px;*/
+
+.enter {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 12px;
+  /* width: 100%;*/
+  /* max-width: 100%;*/
+  padding: 16px;
+  background: #ff0073;
+  display: inline-block;
+  /* min-width: 98px;*/
+  /*min-height: 37px;*/
+  position: relative;
+  color: #fff;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 55%);
+  vertical-align: middle;
+  cursor: pointer;
+  letter-spacing: 0.1px;
+  user-select: none;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+  overflow: visible;
+  height: 50px;
+  /* width:218px; */
+  width: 100%;
+}
+
+/* width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px; */
+
+.hybrid-login-form-help {
+  display: flex;
+  align-items: center;
+}
+
+.login-remember-me-label-text {
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 500;
+  padding-right: 110px;
+  padding: 2px opx 0px;
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
+}
+
+.hybrid-login-form .login-remember-me-label-text {
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.login-help-link {
+  cursor: pointer;
+  color: #b3b3b3;
+  -webkit-box-flex: 0;
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 2px;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
+}
+
+.ui-binary-input input[type='checkbox'] + label {
+  line-height: 1.2;
+}
+
+.ui-binary-input {
+  user-select: none;
+}
+
+.facebook-icon {
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.login-signup-now {
+  display: flex;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+.hybrid-login-form-other {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.login-signup-now a {
+  color: white;
+  text-decoration: none;
+}
+
+.recaptcha-term-of-use {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #8c8c8c;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.recaptcha-link-button {
+  background-color: transparent;
+  display: inline;
+  color: #0071eb;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#visible {
+  font-size: 13px;
+  color: #8c8c8c;
+  margin-top: 11px;
+  text-align: left;
+  -webkit-box-direction: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  direction: ltr;
+  transition: opacity 0.5s linear;
+  /* transition: background-color opacity 0.5s linear;*/
+}
+
+#recaptcha-privacy-link {
+  text-decoration: none;
+  color: #0080ff;
+  display: inline;
+}
+
+#recaptcha-tos-link {
+  text-decoration: none;
+  color: #0080ff;
+  display: inline;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/*input {
+  display: block;
+} */
+
+.facebook {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+.facebook-login {
+}
+
+.login-submit {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-right: 148px;
+  cursor: pointer;
+}
+
+.icon-facebook {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.conect-facebook {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.568);
+  margin-top: 90px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: Helvetica, sans-serif;
+}
+
+.footer {
+  display: flex;
+  color: #757575;
+  display: inline;
+}
+
+.footer-top {
+  color: #757575;
+  padding: 0;
+  display: block;
+  padding: 0;
+  margin: 0 0 30px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.footer-top-a {
+  display: inline;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  line-height: 32px;
+}
+
+.footer-links2 {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+}
+
+.links-a-2 {
+  margin-left: 192px;
+}
+
+.select-language {
+  text-indent: 0;
+  padding-right: 26px;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  padding: 12px;
+  color: #757575;
+  padding-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+}
+
+.select-arrow {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  display: inline;
+}

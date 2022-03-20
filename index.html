@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logotipo">
+          <img class="logonet" src="imagens/IsaFlix__1.png" alt="" />
+        </div>
+      </nav>
+
+    
+    </header>
+
+    <main>
+      <h1>Entrar</h1>
+      <div class="tela-centro">
+      <!-- onblur="validacaoEmail(f1.email)"-->
+        
+          <input type="text" data-uia="login-field" name="userLoginId" class="caixa1" id="id_userLoginId" value="" tabindex="0" autocomplete="email" dir="" placeholder="Email ou número de telefone">
+          
+        <!--<input type="text" class="caixa1"-->
+        <!--<input type="number" class="caixa2"-->
+        
+        <div id="visualizar">
+          <input type="password"  data-uia="password-field" name="password" class="caixa2" id="id_password" value="" tabindex="0" autocomplete="password" dir="" placeholder="Senha">
+          <img src="imagens/olhop.svg" alt="" id="olho" onmouseenter="visualizar()"  onmouseleave="visualizar()"> 
+        </div>
+        
+        
+
+        <button onclick="validaLogin()"  class="enter" type="submit" autocomplete="off" tabindex="0" data-uia="login-submit-button">Entrar</button>
+
+        <div class="hybrid-login-form-help">
+          <div class="ui-binary-input login-remember-me">
+            <input type="checkbox" class="" name="rememberMe" id="bxid_rememberMe_true" value="true" tabindex="0" data-uia="rememberMe" checked="">
+            <label for="bxid_rememberMe_true" data-uia="label+rememberMe">
+              <span class="login-remember-me-label-text">Lembre-se de mim</span>
+            </label>
+            <div class="helper">
+            </div>
+          </div>
+          <a class="login-help-link" href="https://www.netflix.com/br/LoginHelp" target="_self"  data-uia="login-help-link">Precisa de ajuda?</a>
+        </div>
+
+        <div class="facebook">
+          <button id="login" class="login-submit" type="submit" autocomplete="off" tabindex="0">
+            <div class="facebook-login"></div>
+              <img class="icon-facebook" src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" alt="ícone do facebook"> 
+              <span class="conect-facebook" > 
+                 Conectar com o facebook
+              </span>
+            </div>
+          </button>
+        </div>
+
+        <div class="hybrid-login-form-other">
+          <div class="login-signup-now" data-uia="login-signup-now">
+           Novo por aqui?&nbsp;
+           <a  class="sign-now" href="https://www.netflix.com/br/" target="_self">Assine agora</a>.       
+          </div>
+        </div>
+        <div class="recaptcha-term-of-use" data-uia="recaptcha-terms-of-use">
+          <p>
+            <span>
+              Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+            </span>
+            &nbsp;
+            <input id="btn-saiba-mais" type="button" value="Saiba mais." onclick="mostra()"
+              class="recaptcha-link-button"data-uia="recaptcha-learn-more-button">
+            </input>
+          </p>
+        </div>
+
+        <div id="visible" class="hidden" 
+        data-uia="recaptcha-disclosure">
+          <p id="recaptcha-disclosure-text ">As informações recolhidas pelo Google reCAPTCHA estão sujeitas à
+             <a href="https://policies.google.com/privacy" id="recaptcha-privacy-link" data-uia="recaptcha-privacy-link" target="_blank">Politica de privacidade</a> e
+             <a href="https://policies.google.com/terms" id="recaptcha-tos-link" data-uia="recaptcha-tos-link" target="_blank">Termos de uso</a>, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).
+            
+          </p>
+        </div>
+        
+              
+      </div>
+
+      <!--div class="contentface">
+        <a href=""><img class="facebook-icon" src="imagens/facebook-icon.png" alt=""> Conectar com o facebook</a>-->
+      </div>
+    </main>
+
+    <footer>
+
+      <div class="footer">
+
+     
+      <p class="footer-top">
+        Dúvidas?&nbsp;Ligue
+       <a class="footer-top-a" href="tel:+553899852805">+553899852805</a>
+
+      </p>
+      <ul class="footer-links">
+        <li class="links-a"><a href="">Perguntas frequentes</a></li>
+        <li class="links-a"><a href="">Centro de ajuda</a></li>
+        <li class="links-a"><a href="">Termos de uso</a></li>
+        <li class="links-a"><a href="">Privacidade</a></li>
+      </ul>
+
+      <ul class="footer-links2">
+        <li class="links-a-1"><a href="">Preferências de cookies</a></li>
+        <li class="links-a-2"><a href=""></a>Informações corporativas</li>
+      </ul>
+    
+      </div>
+
+      <div class="selection-container">
+        <div data-uia="language-picker+container" class="selection-wrapper">
+          <label for="lang-switcher-select" class="label">
+           <!--<span class="label-text">Selecione um idioma</span>--> 
+          </label>
+          <div class="select-arrow">
+            <select data-uia="language-picker" class="select-language" name="" id="language" tabindex="0" placeholder="lang-switcher">
+              <option select lang="pt" value="/?locale=pt-BR" data-language="pt" data-country="BR">Português</option>
+              <option lang="en" value="/?locale=en-BR" data-language="en" data-country="BR">English</option>
+            </select>
+          </div>
+
+        </div>
+       
+      </div>
+      
+      
+    </footer>
+    <script src="index.js"></script>
+
+  </body>
+</html>
